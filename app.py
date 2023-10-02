@@ -38,6 +38,7 @@ if img_file_buffer is not None:
     # run the inference
     prediction = model.predict(data)
     print(prediction)
+    print(prediction[0][0])
     if prediction[0][0]>0.5:
       st.header('puño, con Probabilidad: '+str( prediction[0][0]) )
     if prediction[0][1]>0.5:
