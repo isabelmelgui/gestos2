@@ -40,10 +40,10 @@ if img_file_buffer is not None:
     print(prediction)
     if prediction[0][0]>0.5:
       st.header('puño, con Probabilidad: '+str( prediction[0][0]))
-      st.text(puño, con Probabilidad)
+      text= st.text("puño, con Probabilidad")
     if prediction[0][1]>0.5:
       st.header('palma, con Probabilidad: '+str( prediction[0][1]))
-      st.text(Palma, con Probabilidad)  
+      text= st.text("Palma, con Probabilidad")  
 
 
 #Mi NuevaApp
@@ -63,7 +63,7 @@ st.subheader("Texto a audio.")
 
            
 
-text = st.text_input("Ingrese el texto.")
+#text = st.text_input("Ingrese el texto.")
 
 tld="es"
 
