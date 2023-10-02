@@ -40,10 +40,10 @@ if img_file_buffer is not None:
     print(prediction)
     if prediction[0][0]>0.5:
       st.header('puño, con Probabilidad: '+str( prediction[0][0]))
-      text= st.text("puño, con Probabilidad")
+      text = "puño, con Probabilidad"
     if prediction[0][1]>0.5:
       st.header('palma, con Probabilidad: '+str( prediction[0][1]))
-      text= st.text("Palma, con Probabilidad")  
+      text = "Palma, con Probabilidad"
 
 
 #Mi NuevaApp
@@ -80,7 +80,7 @@ def text_to_speech(text, tld):
 
 #display_output_text = st.checkbox("Verifica el texto")
 
-if st.button("convertir"):
+if st.button("Escuchar características"):
     result, output_text = text_to_speech(text, tld)
     audio_file = open(f"temp/{result}.mp3", "rb")
     audio_bytes = audio_file.read()
