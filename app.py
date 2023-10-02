@@ -15,7 +15,7 @@ from PIL import Image
 model = load_model('keras_model.h5')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
-st.title("Reconocimiento de Imágenes")
+st.title("Reconocimiento de Etiquetas")
 
 img_file_buffer = st.camera_input("Toma una Foto")
 
@@ -38,11 +38,12 @@ if img_file_buffer is not None:
     # run the inference
     prediction = model.predict(data)
     print(prediction)
-    print(prediction[0][0])
     if prediction[0][0]>0.5:
-      st.header('puño, con Probabilidad: '+str( prediction[0][0]) )
+      st.header('puño, con Probabilidad: '+str( prediction[0][0]))
+      st.text(puño, con Probabilidad)
     if prediction[0][1]>0.5:
       st.header('palma, con Probabilidad: '+str( prediction[0][1]))
+      st.text(Palma, con Probabilidad)  
 
 
 #Mi NuevaApp
@@ -59,11 +60,7 @@ except:
     pass
 
 st.subheader("Texto a audio.")
-st.write('Las interfaces de texto a audio son fundamentales en las interfaces multimodales ya que permiten '  
-         'una comunicación más accesible y natural, facilitando la inclusión de personas con discapacidades ' 
-         ' visuales y permitiendo la interacción en situaciones donde no es posible leer texto. Estas interfaces '  
-         ' también impulsan tecnologías emergentes como los asistentes de voz inteligentes, haciendo que la tecnología ' 
-         ' sea más accesible e intuitiva para todos los usuarios')
+
            
 
 text = st.text_input("Ingrese el texto.")
