@@ -20,7 +20,10 @@ data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 st.title("Lector de etiquetas")
 st.title('_Moda_ :blue[inclusiva]')
 
-img_file_buffer = st.camera_input("Toma una Foto")
+image = Image.open('text_to_audio.png')
+st.image(image, width=200)
+
+img_file_buffer = st.camera_input("Toma una Foto de tu etiqueta")
 
 if img_file_buffer is not None:
     # To read image file buffer with OpenCV:
@@ -51,20 +54,14 @@ if img_file_buffer is not None:
 
 #Mi NuevaApp
 
-st.title("Interfases Multimodales.")
-image = Image.open('text_to_audio.png')
-
-st.image(image, width=200)
-
 
 try:
     os.mkdir("temp")
 except:
     pass
 
-st.subheader("Texto a audio.")
+st.subheader("Escucha las características de la prenda")
 
-           
 
 #text = st.text_input("Ingrese el texto.")
 
