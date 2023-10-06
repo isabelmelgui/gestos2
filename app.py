@@ -18,7 +18,7 @@ model = load_model('keras_model.h5')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
 st.title("Lector de etiquetas")
-st.title('_Moda_ :pink[Inclusiva] :sunglasses:')
+st.title('_Moda_ :pink[Inclusiva]')
 
 img_file_buffer = st.camera_input("Toma una Foto")
 
