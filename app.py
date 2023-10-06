@@ -20,8 +20,10 @@ data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 st.title("Lector de etiquetas")
 st.title('_Moda_ :blue[inclusiva]')
 
-image = Image.open('text_to_audio.png')
-st.image(image, width=200)
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+    image = Image.open('text_to_audio.png')
+    st.image(image, width=200)
 
 img_file_buffer = st.camera_input("Toma una Foto de tu etiqueta")
 
@@ -105,10 +107,12 @@ def remove_files(n):
 
 remove_files(7)
 
+image = Image.open('text_to_audio.png')
+st.image(image, width=200)
 
 #Leer imagen
 
-st.title("Reconocimiento óptico de Caracteres")
+st.title("También puedes cargar la imagen para ser leida")
 
 img_file_buffer2 = st.file_uploader("Choose a jpg file")
 
