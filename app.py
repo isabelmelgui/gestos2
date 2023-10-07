@@ -24,7 +24,7 @@ left_co, cent_co,last_co = st.columns(3)
 with cent_co:
 
     image = Image.open('Modainclusiva_Mesa de trabajo 1.jpg')
-    st.image(image)
+    st.image(image, width= 200)
 
 img_file_buffer = st.camera_input("Toma una Foto de tu etiqueta")
 
@@ -49,10 +49,10 @@ if img_file_buffer is not None:
     print(prediction)
     if prediction[0][0]>0.5:
       st.header('puño, con Probabilidad: '+str( prediction[0][0]))
-      text = "puño, con Probabilidad"
+      text = "puño, con Probabilidad El vestido es rojo, tiene un corte clásico, con una longitud que llega justo por encima de la rodilla, lo que lo hace fácil de llevar en diversas ocasiones, ya sea una cena formal o una reunión casual. La parte delantera presenta un escote redondo que se siente suave al tacto y es fácil de encontrar. Además, los botones en la parte posterior del vestido están diseñados de manera táctil, lo que permite abrocharlos sin dificultad."
     if prediction[0][1]>0.5:
       st.header('palma, con Probabilidad: '+str( prediction[0][1]))
-      text = "Palma, con Probabilidad"
+      text = "Palma, con Probabilidad, Este chaleco de color gris es una prenda versátil y elegante que puede agregar un toque de sofisticación a cualquier conjunto. El diseño de este chaleco es clásico y atemporal, con un corte ajustado que realza la figura de quien lo lleva puesto. Tiene un cierre de botones frontales que facilita su colocación y ajuste. Los botones están cuidadosamente cosidos en un patrón que agrega un toque de estilo y sofisticación."
 
 
 #Mi NuevaApp
@@ -109,7 +109,7 @@ def remove_files(n):
 remove_files(7)
 
 image2 = Image.open('Modainclusiva-02.jpg')
-st.image(image)
+st.image(image, width= 200)
 
 #Leer imagen
 
