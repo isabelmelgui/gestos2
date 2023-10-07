@@ -24,7 +24,7 @@ left_co, cent_co,last_co = st.columns(3)
 with cent_co:
 
     image = Image.open('Modainclusiva_Mesa de trabajo 1.jpg')
-    st.image(image, width= 200)
+    st.image(image, width= 1000)
 
 img_file_buffer = st.camera_input("Toma una Foto de tu etiqueta")
 
@@ -108,8 +108,9 @@ def remove_files(n):
 
 remove_files(7)
 
-image2 = Image.open('Modainclusiva-02.jpg')
-st.image(image, width= 200)
+with cent_co:
+    image2 = Image.open('Modainclusiva-02.jpg')
+    st.image(image, width= 1000)
 
 #Leer imagen
 
