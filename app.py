@@ -21,7 +21,7 @@ st.title("Lector de etiquetas")
 st.title('_Moda_ :violet[inclusiva]')
 
 
-image = Image.open('Moda1')
+image = Image.open('Moda1.jpg')
 st.image(image, width= 700)
 
 img_file_buffer = st.camera_input("Toma una Foto de tu etiqueta")
@@ -106,7 +106,7 @@ def remove_files(n):
 
 remove_files(7)
 
-image2 = Image.open('Moda2')
+image2 = Image.open('Moda2.jpg')
 st.image(image2, width= 700)
 
 #Leer imagen
