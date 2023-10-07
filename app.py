@@ -18,7 +18,7 @@ model = load_model('keras_model.h5')
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
 st.title("Lector de etiquetas")
-st.title('_Moda_ :blue[inclusiva]')
+st.title('_Moda_ :violet[inclusiva]')
 
 left_co, cent_co,last_co = st.columns(3)
 with cent_co:
