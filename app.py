@@ -46,11 +46,11 @@ if img_file_buffer is not None:
     prediction = model.predict(data)
     print(prediction)
     if prediction[0][0]>0.5:
-      st.header('puño, con Probabilidad: '+str( prediction[0][0]))
-      text = "puño, con Probabilidad El vestido es rojo, tiene un corte clásico, con una longitud que llega justo por encima de la rodilla, lo que lo hace fácil de llevar en diversas ocasiones, ya sea una cena formal o una reunión casual. La parte delantera presenta un escote redondo que se siente suave al tacto y es fácil de encontrar. Además, los botones en la parte posterior del vestido están diseñados de manera táctil, lo que permite abrocharlos sin dificultad."
+      st.header('Etiqueta Rosa: '+str( prediction[0][0]))
+      text = "El vestido es rosa, tiene un corte clásico, con una longitud que llega justo por encima de la rodilla, lo que lo hace fácil de llevar en diversas ocasiones, ya sea una cena formal o una reunión casual. La parte delantera presenta un escote redondo que se siente suave al tacto y es fácil de encontrar. Además, los botones en la parte posterior del vestido están diseñados de manera táctil, lo que permite abrocharlos sin dificultad."
     if prediction[0][1]>0.5:
-      st.header('palma, con Probabilidad: '+str( prediction[0][1]))
-      text = "Palma, con Probabilidad, Este chaleco de color gris es una prenda versátil y elegante que puede agregar un toque de sofisticación a cualquier conjunto. El diseño de este chaleco es clásico y atemporal, con un corte ajustado que realza la figura de quien lo lleva puesto. Tiene un cierre de botones frontales que facilita su colocación y ajuste. Los botones están cuidadosamente cosidos en un patrón que agrega un toque de estilo y sofisticación."
+      st.header('Etiqueta negra: '+str( prediction[0][1]))
+      text = "Este chaleco de color negro es una prenda versátil y elegante que puede agregar un toque de sofisticación a cualquier conjunto. El diseño de este chaleco es clásico y atemporal, con un corte ajustado que realza la figura de quien lo lleva puesto. Tiene un cierre de botones frontales que facilita su colocación y ajuste. Los botones están cuidadosamente cosidos en un patrón que agrega un toque de estilo y sofisticación."
 
 
 #Mi NuevaApp
