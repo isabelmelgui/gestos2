@@ -22,8 +22,7 @@ st.title('_Moda_ :blue[inclusiva]')
 
 left_co, cent_co,last_co = st.columns(3)
 with cent_co:
-    st.title("Lector de etiquetas")
-    st.title('_Moda_ :blue[inclusiva]')
+
     image = Image.open('text_to_audio.png')
     st.image(image, width=200)
 
