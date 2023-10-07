@@ -23,7 +23,7 @@ st.title('_Moda_ :violet[inclusiva]')
 
 
 image = Image.open('Modainclusiva_Mesa de trabajo 1.jpg')
-st.image(image, width= 800)
+st.image(image, width= 700)
 
 img_file_buffer = st.camera_input("Toma una Foto de tu etiqueta")
 
@@ -108,7 +108,7 @@ def remove_files(n):
 remove_files(7)
 
 image2 = Image.open('Modainclusiva-02.jpg')
-st.image(image2, width= 800)
+st.image(image2, width= 700)
 
 #Leer imagen
 
