@@ -23,8 +23,8 @@ st.title('_Moda_ :violet[inclusiva]')
 left_co, cent_co,last_co = st.columns(3)
 with cent_co:
 
-    image = Image.open('text_to_audio.png')
-    st.image(image, width=200)
+    image = Image.open('Modainclusiva_Mesa de trabajo 1.jpg')
+    st.image(image)
 
 img_file_buffer = st.camera_input("Toma una Foto de tu etiqueta")
 
@@ -108,8 +108,8 @@ def remove_files(n):
 
 remove_files(7)
 
-image = Image.open('text_to_audio.png')
-st.image(image, width=200)
+image2 = Image.open('Modainclusiva-02.jpg')
+st.image(image)
 
 #Leer imagen
 
