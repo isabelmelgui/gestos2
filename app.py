@@ -21,7 +21,6 @@ st.title("Lector de etiquetas")
 st.title('_Moda_ :violet[inclusiva]')
 
 
-
 image = Image.open('Moda1')
 st.image(image, width= 700)
 
@@ -107,8 +106,8 @@ def remove_files(n):
 
 remove_files(7)
 
-image2 = Image.open('Modainclusiva-02.jpg')
-st.image(Moda, width= 700)
+image2 = Image.open('Moda2')
+st.image(image2, width= 700)
 
 #Leer imagen
 
